@@ -1,0 +1,2 @@
+#define LINKEDLIST_API __declspec(dllexport)
+#define LINKEDLIST_API __declspec(dllimport)

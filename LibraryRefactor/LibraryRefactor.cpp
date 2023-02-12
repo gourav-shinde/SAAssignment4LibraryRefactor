@@ -1,16 +1,17 @@
 // LibraryRefactor.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
-
+#pragma once
 #include <iostream>
 
-#include <UI.h>
+#include "UI.h"
+
 
 int main()
 {
     std::cout << "Hello World!\n";
     try
     {
-        std::shared_ptr<UI> instanceOfUI = std::make_shared<UI>();
+        std::shared_ptr<CUI> instanceOfUI = std::make_shared<CUI>();
 
         instanceOfUI->Init();
         instanceOfUI->StartGUILoop();
